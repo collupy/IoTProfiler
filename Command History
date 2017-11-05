@@ -12,3 +12,7 @@ set service dhcp-server shared-network-name dhcpexample subnet 10.0.0.1/24 defau
 set service dhcp-server shared-network-name dhcpexample subnet 10.0.0.1/24 dns-server 10.0.0.1
 set service dhcp-server shared-network-name dhcpexample subnet 10.0.0.1/24 lease 86400
 set service dhcp-server shared-network-name dhcpexample subnet 10.0.0.1/24 start 10.0.0.10 stop 10.0.0.199
+
+
+:WINDOWS WORKSTATION:  // done so I can communicate with the test network from my home network as if it were posing as the "public internet"
+route -p ADD 192.168.35.0 MASK 255.255.255.0 192.168.0.2
